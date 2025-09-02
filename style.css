@@ -174,7 +174,7 @@ legend {
 .resultado h3 {
   color: #1a3d7c;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 200;
   margin-bottom: 15px;
   display: flex;
   align-items: center;
@@ -189,8 +189,7 @@ legend {
   border-radius: 8px;
   text-align: center;
   font-size: 15px;
-  font-family: 'Fira Code', 'Courier New', monospace;
-  font-weight: 600;
+  font-weight: 200;
   color: #2251a4;
   overflow-x: auto;
   margin: 15px auto;
