@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerador de Barcode ATPBR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Preenchimento dos Campos do Barcode</h1>
+  <text>Exemplo: ATPBR   -   056   -   001   -   9621   -  0001  -  01ABD</text>
+
+  <form id="form">
+    <label>Digite uma sigla para o projeto (máx 6 letras):<br>
+      <input type="text" id="inputLetras" maxlength="6" required>
+    </label>
+    <br><br>
+
+    <label>Selecione o tipo de câncer:<br>
+      <select id="cancer" required>
+        <option value="">-- Escolha --</option>
+        <option value="056">Câncer de Ovário (CID 056)</option>
+        <option value="050">Câncer de Mama (CID 050)</option>
+        <option value="053">Câncer de Colo de Útero (CID 053)</option>
+        <option value="541">Câncer de Endométrio (CID 541)</option>
+        <option value="060">Câncer de Pênis (CID 060)</option>
+        <option value="091">Leucemia Linfóide (CID 091)</option>
+        <option value="092">Leucemia Mielóide (CID 092)</option>
+      </select>
+    </label>
+    <br><br>
+
+    <label>Selecione o centro participante:<br>
+      <select id="cancer" required>
+        <option value="">-- Escolha --</option>
+        <option value="001">Instituto Nacional do Câncer (001)</option>
+      </select>
+    </label>
+    <br><br>
+
+    <button type="submit">Gerar Barcode</button>
+  </form>
+
+  <div id="resultado"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
