@@ -53,7 +53,7 @@ form.addEventListener("submit", (e) => {
   }
 
   // Regra para gerar o código
-  const codigo = `${sigla}-${cancerCID}-${centerID}-${doadorID}-${sampleID}-${sampleType}${sampleStatus}${samplePreservation}`;
+  const codigo = `${sigla}-${cancerCID}-${centerID}-${doadorID}-${sampleID}-${sampleType}${sampleStatus}${samplePreservation}${analyteType}`;
 
   resultado.textContent = "Código gerado: " + codigo;
 });
