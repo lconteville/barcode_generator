@@ -8,8 +8,8 @@ body {
 
 /* ====== Header / Hero ====== */
 .header {
-  background: linear-gradient(90deg, #2251a4, #18c5a4);
-  color: white;
+  background: #DADADA;
+  color: #2B2B2B;
   position: relative;
   overflow: hidden;
   padding: 35px 40px;
