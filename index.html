@@ -20,8 +20,8 @@
 
 <main class="container">
   <section class="card">
-    <h2>🧬 Gerar Identificador da Amostra</h2>
-    <p class="example">Preencha os campos abaixo para criar o código padronizado da sua amostra.</p>
+    <h2>🧬 Geração de Barcodes Padronizados do ATPBR </h2>
+    <p class="example">Preencha os campos abaixo para criar o barcode padronizado da sua amostra.</p>
     
     <form id="form" class="form">
       
@@ -29,12 +29,12 @@
       <fieldset>
         <legend>📁 Projeto</legend>
         <label>
-          Nome curto do projeto (máx 6 letras):
+          Acrônimo do projeto (máx 6 letras):
           <input type="text" id="inputLetras" maxlength="6" placeholder="Ex: ATPBR" required>
         </label>
 
         <label>
-          Tipo de câncer:
+          Tipo de câncer estudado:
           <select id="cancertype" required>
             <option value="">Selecione...</option>
             <option value="056">Câncer de Ovário (CID 056)</option>
@@ -78,27 +78,27 @@
           Tipo de amostra:
           <select id="sampletype" required>
             <option value="">Selecione...</option>
-            <option value="01">Tecido</option>
-            <option value="02">Sangue</option>
-            <option value="03">Plasma</option>
-            <option value="04">Soro</option>
-            <option value="05">Medula Óssea</option>
-            <option value="06">Líquido Peritoneal</option>
-            <option value="07">Líquido Sinovial</option>
-            <option value="08">Líquido Pericárdico</option>
-            <option value="09">Líquido Cefalorraquidiano</option>
-            <option value="10">Lavado Brônquico</option>
-            <option value="11">Lavado Peritoneal</option>
-            <option value="12">Urina</option>
-            <option value="13">Saliva</option>
-            <option value="14">Escarro</option>
-            <option value="15">Fezes</option>
-            <option value="16">Pele</option>
-            <option value="17">Células</option>
-            <option value="18">Secreção Mamária</option>
-            <option value="19">Líquido Pleural</option>
-            <option value="20">Exossomos (EVs)</option>
-            <option value="21">Biópsia por Agulha Fina (BAF)</option>
+            <option value="01">Tecido (01)</option>
+            <option value="02">Sangue (02)</option>
+            <option value="03">Plasma (03)</option>
+            <option value="04">Soro (04)</option>
+            <option value="05">Medula Óssea (05)</option>
+            <option value="06">Líquido Peritoneal (06)</option>
+            <option value="07">Líquido Sinovial (07)</option>
+            <option value="08">Líquido Pericárdico (08)</option>
+            <option value="09">Líquido Cefalorraquidiano (09)</option>
+            <option value="10">Lavado Brônquico (10)</option>
+            <option value="11">Lavado Peritoneal (11)</option>
+            <option value="12">Urina (12)</option>
+            <option value="13">Saliva (13)</option>
+            <option value="14">Escarro (14)</option>
+            <option value="15">Fezes (15)</option>
+            <option value="16">Pele (16)</option>
+            <option value="17">Células (17)</option>
+            <option value="18">Secreção Mamária (18)</option>
+            <option value="19">Líquido Pleural (19)</option>
+            <option value="20">Exossomos (20)</option>
+            <option value="21">Biópsia por Agulha Fina (21)</option>
           </select>
         </label>
 
@@ -106,16 +106,16 @@
           Status da amostra:
           <select id="samplestatus" required>
             <option value="">Selecione...</option>
-            <option value="A">Tumoral Maligno</option>
-            <option value="B">Tumoral Benigno</option>
-            <option value="C">Lesão</option>
-            <option value="D">Metástase</option>
-            <option value="E">Normal Adjacente</option>
-            <option value="F">Normal Distante</option>
-            <option value="G">Linfonodo Metastático</option>
-            <option value="H">Linfonodo Reacional</option>
-            <option value="I">Inflamação</option>
-            <option value="J">Linhagem Celular</option>
+            <option value="A">Tumoral Maligno (A)</option>
+            <option value="B">Tumoral Benigno (B)</option>
+            <option value="C">Lesão (C)</option>
+            <option value="D">Metástase (D)</option>
+            <option value="E">Normal Adjacente (E)</option>
+            <option value="F">Normal Distante (F)</option>
+            <option value="G">Linfonodo Metastático (G)</option>
+            <option value="H">Linfonodo Reacional (H)</option>
+            <option value="I">Inflamação (I)</option>
+            <option value="J">Linhagem Celular (J)</option>
           </select>
         </label>
 
@@ -123,18 +123,18 @@
           Preservação da amostra:
           <select id="samplepreservation" required>
             <option value="">Selecione...</option>
-            <option value="A">Fresco</option>
-            <option value="B">Congelado</option>
-            <option value="C">FFPE (Formalin-Fixed, Paraffin-Embedded)</option>
-            <option value="D">PFA (Paraformaldeído)</option>
-            <option value="E">Rnalater</option>
-            <option value="F">Meio de Cultura</option>
-            <option value="G">Tampão Salino</option>
-            <option value="H">EDTA</option>
-            <option value="I">Citrato</option>
-            <option value="J">Sem Anti-Coagulante</option>
-            <option value="K">Heparina</option>
-            <option value="L">Solução Fisiológica</option>
+            <option value="A">Fresco (A)</option>
+            <option value="B">Congelado (B)</option>
+            <option value="C">FFPE Formalin-Fixed Paraffin-Embedded (C)</option>
+            <option value="D">PFA Paraformaldeído (D)</option>
+            <option value="E">Rnalater (E)</option>
+            <option value="F">Meio de Cultura (F)</option>
+            <option value="G">Tampão Salino (G)</option>
+            <option value="H">EDTA (H)</option>
+            <option value="I">Citrato (I)</option>
+            <option value="J">Sem Anti-Coagulante (J)</option>
+            <option value="K">Heparina (K)</option>
+            <option value="L">Solução Fisiológica (L)</option>
           </select>
         </label>
 
@@ -150,7 +150,7 @@
         </label>
       </fieldset>
 
-      <button type="submit" class="btn">🚀 Criar Identificador</button>
+      <button type="submit" class="btn">🚀 Criar Barcode</button>
     </form>
 
     <div id="resultado" class="resultado"></div>
