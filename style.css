@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+}
+
+input, select, button {
+  margin-top: 10px;
+  padding: 6px;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#resultado {
+  background: #f4f4f4;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
