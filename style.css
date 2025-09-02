@@ -1,6 +1,6 @@
 /* ====== Reset ====== */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin: 0;
   background: #f5f7fa;
   color: #333;
@@ -16,16 +16,6 @@ body {
   min-height: 180px;
   display: flex;
   align-items: center;
-}
-
-.header::before {
-  content: "";
-  background: url("img/logo_atpbr.png") no-repeat center;
-  background-size: 1100px; /* Marca d’água */
-  opacity: 0.05;
-  position: absolute;
-  inset: 0;
-  z-index: 0;
 }
 
 .header h1,
