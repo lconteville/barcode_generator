@@ -8,7 +8,7 @@ form.addEventListener("submit", (e) => {
   const cancerCID = document.getElementById("cancertype").value;
   const center = document.getElementById("center").value;
 
-  if (letras.length !>= 6 || !cancerCID || !center) {
+  if (letras.length !< 7 || !cancerCID || !center) {
     resultado.textContent = "Preencha a sigla e selecione um tipo de câncer.";
     return;
   }
