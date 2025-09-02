@@ -37,6 +37,16 @@
     </label>
     <br><br>
 
+    <label>Digite o Código do Participante (exatamente 4 números):<br>
+      <input type="text" id="doador" maxlength="4" required>
+    </label>
+    <br><br>
+
+    <label>Digite o Código da Amostra (exatamente 4 números):<br>
+      <input type="text" id="amostra" maxlength="4" required>
+    </label>
+    <br><br>
+
     <label>Selecione o tipo de amostra:<br>
       <select id="sampletype" required>
         <option value="">-- Escolha --</option>
@@ -61,6 +71,42 @@
         <option value="19">Líquido Pleural</option>
         <option value="20">Exossomos (EVs)</option>
         <option value="21">Biópsia por Agulha Fina (BAF)</option>
+      </select>
+    </label>
+    <br><br>
+
+    <label>Status da amostra:<br>
+      <select id="samplestatus" required>
+        <option value="">-- Escolha --</option>
+        <option value="A">Tumoral Maligno</option>
+        <option value="B">Tumoral Benigno</option>
+        <option value="C">Lesão</option>
+        <option value="D">Metástase</option>
+        <option value="E">Normal Adjacente</option>
+        <option value="F">Normal Distante</option>
+        <option value="G">Linfonodo Metastático</option>
+        <option value="H">Linfonodo Reacional</option>
+        <option value="I">Inflamação</option>
+        <option value="J">Linhagem Celular</option>
+      </select>
+    </label>
+    <br><br>
+
+    <label>Preservação da amostra:<br>
+      <select id="samplepreservation" required>
+        <option value="">-- Escolha --</option>
+        <option value="A">Fresco</option>
+        <option value="B">Congelado</option>
+        <option value="C">FFPE (Formalin-Fixed, Paraffin-Embedded)</option>
+        <option value="D">PFA (Paraformaldeído)</option>
+        <option value="E">Rnalater</option>
+        <option value="F">Meio de Cultura</option>
+        <option value="G">Tampão Salino</option>
+        <option value="H">EDTA</option>
+        <option value="I">Citrato</option>
+        <option value="J">Sem Anti-Coagulante</option>
+        <option value="K">Heparina</option>
+        <option value="L">Solução Fisiológica</option>
       </select>
     </label>
     <br><br>
