@@ -222,7 +222,7 @@ legend {
 /* ====== Responsividade ====== */
 @media (max-width: 768px) {
   .header {
-    padding: 60px 20px;
+    padding: 20px 20px;
     min-height: 250px;
   }
   .header-content {
