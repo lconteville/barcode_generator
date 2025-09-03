@@ -288,8 +288,11 @@ legend {
   legend {
     font-size: 23px;
   }
-  .example, .form label, .form input, .form select, .form textarea {
+  .example, .form label, .form input, .form select {
     font-size: 19px;
+  }
+  .form textarea {
+    width: 95%;
   }
   .btn {
     font-size: 25px;
