@@ -269,12 +269,18 @@ legend {
   .card {
     max-width: 90%;
   }
-  .card h3 {
-    font-size:20px;
+  .card h3,h2 {
+    font-size: 30px;
+  }
+  .example {
+    font-size: 25px;
   }
   legend {
-    font-size: 16px;
+    font-size: 28px;
   }
+  label {
+    font-size: 25px;
+  }  
   .form label {
     font-size: 15px;
   }
