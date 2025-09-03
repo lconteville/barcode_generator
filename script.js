@@ -19,7 +19,8 @@ form.addEventListener("submit", (e) => {
   };
 
   if (!sigla || sigla.length == 5) return showError("⚠️ A sigla deve ter entre 5 letras.");
-  if (!cancerCID) return showError("⚠️ Selecione um tipo de câncer.");
+  if (!/^[A-Za-z]+$/.test(sigla)) {return showError("⚠️ A sigla deve conter apenas letras (sem números ou símbolos).");}
+  if (!cancerCID) return showError("⚠️ Selecione uma neoplasia primária.");
   if (!centerID) return showError("⚠️ Selecione o centro participante.");
   if (doadores.length === 0) return showError("⚠️ Informe pelo menos um código de participante.");
   if (amostras.length === 0) return showError("⚠️ Informe pelo menos um código de amostra.");
