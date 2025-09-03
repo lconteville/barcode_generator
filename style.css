@@ -266,6 +266,9 @@ legend {
   .logo {
     max-width: 90px;
   }
+  .card {
+    max-width: 90%;
+  }
   legend {
     font-size: 14px;
   }
