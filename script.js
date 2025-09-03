@@ -65,3 +65,14 @@ form.addEventListener("submit", (e) => {
     link.click();
   });
 });
+// Bonequinho de ajuda: abrir/fechar popup
+document.addEventListener("DOMContentLoaded", function() {
+  const widget = document.getElementById("help-widget");
+  const popup = document.getElementById("help-popup");
+
+  if (widget && popup) {
+    widget.addEventListener("click", () => {
+      popup.style.display = popup.style.display === "block" ? "none" : "block";
+    });
+  }
+});

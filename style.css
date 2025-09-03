@@ -280,3 +280,68 @@ legend {
     padding: 12px;
   }
 }
+
+/* ====== Bonequinho de Ajuda ====== */
+#help-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007bff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+  z-index: 9999;
+  transition: transform 0.2s ease-in-out, background 0.2s;
+}
+#help-widget:hover {
+  transform: scale(1.1);
+  background: #0056b3;
+}
+
+/* Animação boneco */
+.boneco {
+  animation: balanca 2s infinite ease-in-out;
+}
+@keyframes balanca {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(10deg); }
+  50%  { transform: rotate(0deg); }
+  75%  { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Caixa popup */
+#help-popup {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.3);
+  z-index: 9999;
+  width: 220px;
+}
+#help-popup ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#help-popup li {
+  margin: 10px 0;
+}
+#help-popup a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+#help-popup a:hover {
+  text-decoration: underline;
+}
