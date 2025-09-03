@@ -18,7 +18,7 @@ form.addEventListener("submit", (e) => {
     resultado.innerHTML = `<p style="color:red;">${msg}</p>`;
   };
 
-  if (!sigla || sigla.length < 4 || sigla.length > 6) return showError("⚠️ A sigla deve ter entre 4 e 6 letras.");
+  if (!sigla || sigla.length == 5) return showError("⚠️ A sigla deve ter entre 5 letras.");
   if (!cancerCID) return showError("⚠️ Selecione um tipo de câncer.");
   if (!centerID) return showError("⚠️ Selecione o centro participante.");
   if (doadores.length === 0) return showError("⚠️ Informe pelo menos um código de participante.");
@@ -48,7 +48,7 @@ form.addEventListener("submit", (e) => {
     const barcode = `${sigla}-${cancerCID}-${centerID}-${doadorID}-${sampleID}-${codExtra}`;
     
     codigosGerados.push(barcode);
-    linhasCSV.push(`${sigla},${cancerCID},${centerID},${doadorID},${sampleID},${codExtra},${barcode}`);
+    linhasCSV.push(`${barcode},${sigla},${cancerCID},${centerID},${doadorID},${sampleID},${codExtra}`);
   }
 
   resultado.innerHTML = `
@@ -64,15 +64,4 @@ form.addEventListener("submit", (e) => {
     link.download = "barcodes.csv";
     link.click();
   });
-});
-// Bonequinho de ajuda: abrir/fechar popup
-document.addEventListener("DOMContentLoaded", function() {
-  const widget = document.getElementById("help-widget");
-  const popup = document.getElementById("help-popup");
-
-  if (widget && popup) {
-    widget.addEventListener("click", () => {
-      popup.style.display = popup.style.display === "block" ? "none" : "block";
-    });
-  }
 });
