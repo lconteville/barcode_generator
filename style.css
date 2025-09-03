@@ -65,7 +65,9 @@ body {
 /* ====== Container Principal ====== */
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  max-width: 900px;
   padding: 40px 20px;
 }
 
