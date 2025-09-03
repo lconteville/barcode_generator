@@ -18,8 +18,9 @@ form.addEventListener("submit", (e) => {
     resultado.innerHTML = `<p style="color:red;">${msg}</p>`;
   };
 
-  if (!sigla || sigla.length == 5) return showError("⚠️ A sigla deve ter exatamente 5 letras.");
+  if (!sigla) {return showError("⚠️ A sigla deve ser preenchida.");}
   if (!/^[A-Za-z]+$/.test(sigla)) {return showError("⚠️ A sigla deve conter apenas letras (sem números ou símbolos).");}
+  if (sigla.length !== 5) {return showError("⚠️ A sigla deve ter exatamente 5 letras.");}
   if (!cancerCID) return showError("⚠️ Selecione uma neoplasia primária.");
   if (!centerID) return showError("⚠️ Selecione o centro participante.");
   if (doadores.length === 0) return showError("⚠️ Informe pelo menos um código de participante.");
