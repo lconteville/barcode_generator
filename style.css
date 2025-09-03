@@ -273,6 +273,9 @@ legend {
   .logo {
     max-width: 140px;
   }
+  .container{
+    padding: 40px 0px;
+  }
   .card {
     max-width: 90%;
   }
@@ -280,13 +283,13 @@ legend {
     font-size: 19px;
   }
   h3, h2 {
-    font-size: 26px;
+    font-size: 25px;
   }
   legend {
     font-size: 25px;
   }
   .example, .form label, .form input, .form select, .form textarea {
-    font-size: 23px;
+    font-size: 20px;
   }
   .btn {
     font-size: 25px;
