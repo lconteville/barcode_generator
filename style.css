@@ -12,7 +12,7 @@ body {
   color: #496797;
   position: relative;
   overflow: hidden;
-  padding: 5px 40px;
+  padding: 0px 40px;
   min-height: 180px;
   display: flex;
   align-items: center;
