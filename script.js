@@ -52,7 +52,7 @@ form.addEventListener("submit", (e) => {
   }
 
   resultado.innerHTML = `
-    <h3>✅ Códigos gerados:</h3>
+    <h3>Barcodes gerados:</h3>
     <pre>${codigosGerados.join("\n")}</pre>
     <button id="downloadCsvBtn" class="btn">📥 Baixar CSV</button>
   `;

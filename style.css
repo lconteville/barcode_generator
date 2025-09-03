@@ -1,6 +1,6 @@
 /* ====== Reset ====== */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin: 0;
   background: #f5f7fa;
   color: #333;
@@ -8,24 +8,14 @@ body {
 
 /* ====== Header / Hero ====== */
 .header {
-  background: linear-gradient(90deg, #2251a4, #18c5a4);
-  color: white;
+  background: #DADADA;
+  color: #496797;
   position: relative;
   overflow: hidden;
-  padding: 35px 40px;
+  padding: 5px 40px;
   min-height: 180px;
   display: flex;
   align-items: center;
-}
-
-.header::before {
-  content: "";
-  background: url("img/logo_atpbr.png") no-repeat center;
-  background-size: 1100px; /* Marca d’água */
-  opacity: 0.05;
-  position: absolute;
-  inset: 0;
-  z-index: 0;
 }
 
 .header h1,
@@ -59,24 +49,29 @@ body {
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 350px;
   height: auto;
   filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
 }
 
 .subtitle {
   font-size: 16px;
-  opacity: 0.95;
   margin: 0;
-  letter-spacing: 4px;
-  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
 /* ====== Container Principal ====== */
 .container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center; 
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;  
   padding: 40px 20px;
+  gap: 30px;
 }
 
 /* ====== Card ====== */
@@ -151,7 +146,7 @@ legend {
   margin-top: 25px;
   width: 100%;
   padding: 14px;
-  background: linear-gradient(90deg, #2251a4, #18c5a4);
+  background: linear-gradient(90deg, #2B6797, #00C6A8);
   border: none;
   border-radius: 8px;
   color: white;
@@ -185,7 +180,7 @@ legend {
 .resultado h3 {
   color: #1a3d7c;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 200;
   margin-bottom: 15px;
   display: flex;
   align-items: center;
@@ -200,8 +195,7 @@ legend {
   border-radius: 8px;
   text-align: center;
   font-size: 15px;
-  font-family: 'Fira Code', 'Courier New', monospace;
-  font-weight: 600;
+  font-weight: 200;
   color: #2251a4;
   overflow-x: auto;
   margin: 15px auto;
@@ -233,7 +227,7 @@ legend {
 /* ====== Responsividade ====== */
 @media (max-width: 768px) {
   .header {
-    padding: 60px 20px;
+    padding: 20px 20px;
     min-height: 250px;
   }
   .header-content {
@@ -248,7 +242,7 @@ legend {
     font-size: 32px;
   }
   .logo {
-    max-width: 110px;
+    max-width: 200px;
   }
   .card {
     padding: 20px;
@@ -272,8 +266,14 @@ legend {
   .logo {
     max-width: 90px;
   }
+  .card {
+    max-width: 90%;
+  }
   legend {
-    font-size: 14px;
+    font-size: 16px;
+  }
+  .form label {
+    font-size: 15px;
   }
   .btn {
     font-size: 14px;
