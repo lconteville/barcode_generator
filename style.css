@@ -87,6 +87,13 @@ body {
 .card h2 {
   color: #2251a4;
   margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.card h3, p {
+  font-size: 16px;
+  line-height: 1.5;
+  width: 100%;
 }
 
 .example {
@@ -269,23 +276,23 @@ legend {
   .card {
     max-width: 90%;
   }
+  .card h3, p, li {
+    font-size: 20px;
+  }
   h3, h2 {
     font-size: 30px;
   }
   .example {
-    font-size: 25px;
+    font-size: 23px;
   }
   legend {
     font-size: 28px;
   }
-  label {
+  .form label, .form input, .form select, .form textarea {
     font-size: 25px;
-  }  
-  .form label {
-    font-size: 15px;
   }
   .btn {
-    font-size: 14px;
+    font-size: 25px;
     padding: 12px;
   }
 }
