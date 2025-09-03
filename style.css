@@ -269,7 +269,7 @@ legend {
   .card {
     max-width: 90%;
   }
-  .card h3,h2 {
+  h3, h2 {
     font-size: 30px;
   }
   .example {
