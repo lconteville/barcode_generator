@@ -120,10 +120,6 @@ body {
   font-size: 14px;
   font-family: inherit;
   resize: vertical;
-}
-
-/* Selects grandes */
-.form select {
   max-height: 180px;
   overflow-y: auto;
 }
