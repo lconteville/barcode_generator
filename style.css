@@ -112,7 +112,7 @@ body {
 .form input,
 .form select,
 .form textarea {
-  width: 100%;
+  width: 95%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -120,6 +120,9 @@ body {
   font-size: 14px;
   font-family: inherit;
   resize: vertical;
+}
+
+.form select {
   max-height: 180px;
   overflow-y: auto;
 }
