@@ -4,6 +4,7 @@ const resultado = document.getElementById("resultado");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
+  const project = document.getElementById("project").value; // ⬅️ novo campo
   const sigla = document.getElementById("inputLetras").value.trim().toUpperCase();
   const cancerCID = document.getElementById("cancertype").value;
   const centerID = document.getElementById("center").value;
@@ -18,9 +19,10 @@ form.addEventListener("submit", (e) => {
     resultado.innerHTML = `<p style="color:red;">${msg}</p>`;
   };
 
-  if (!sigla) {return showError("⚠️ A sigla deve ser preenchida.");}
-  if (!/^[A-Za-z]+$/.test(sigla)) {return showError("⚠️ A sigla deve conter apenas letras (sem números ou símbolos).");}
-  if (sigla.length !== 5) {return showError("⚠️ A sigla deve ter exatamente 5 letras.");}
+  if (!project) return showError("⚠️ Selecione um projeto."); // ⬅️ validação nova
+  if (!sigla) return showError("⚠️ A sigla deve ser preenchida.");
+  if (!/^[A-Za-z]+$/.test(sigla)) return showError("⚠️ A sigla deve conter apenas letras (sem números ou símbolos).");
+  if (sigla.length !== 5) return showError("⚠️ A sigla deve ter exatamente 5 letras.");
   if (!cancerCID) return showError("⚠️ Selecione uma neoplasia primária.");
   if (!centerID) return showError("⚠️ Selecione o centro participante.");
   if (doadores.length === 0) return showError("⚠️ Informe pelo menos um código de participante.");
@@ -41,16 +43,16 @@ form.addEventListener("submit", (e) => {
   }
 
   let codigosGerados = [];
-  let linhasCSV = ["Sigla,CID,Centro,Participante,Amostra,CodExtra,Barcode"];
+  let linhasCSV = ["Projeto,Sigla,CID,Centro,Participante,Amostra,CodExtra,Barcode"]; // ⬅️ add Project no cabeçalho
 
   for (let i = 0; i < doadores.length; i++) {
     const doadorID = doadores[i];
     const sampleID = amostras[i];
     const codExtra = `${sampleType}${sampleStatus}${samplePreservation}${analyteType}`;
-    const barcode = `${sigla}-${cancerCID}-${centerID}-${doadorID}-${sampleID}-${codExtra}`;
+    const barcode = `${project}-${sigla}-${cancerCID}-${centerID}-${doadorID}-${sampleID}-${codExtra}`; // ⬅️ inclui project
     
     codigosGerados.push(barcode);
-    linhasCSV.push(`${barcode},${sigla},${cancerCID},${centerID},${doadorID},${sampleID},${codExtra}`);
+    linhasCSV.push(`${project},${sigla},${cancerCID},${centerID},${doadorID},${sampleID},${codExtra},${barcode}`); // ⬅️ inclui project
   }
 
   resultado.innerHTML = `
