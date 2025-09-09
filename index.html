@@ -53,9 +53,10 @@
     <form id="form" class="form">
       
       <!-- Projeto -->
-<!-- Projeto -->
+<<!-- Projeto -->
 <fieldset>
   <legend>📁 Projeto</legend>
+
   <!-- Nome do projeto -->
   <div class="form-group">
     <label for="project">Nome do projeto</label>
@@ -74,7 +75,7 @@
   </div>
 
   <!-- Neoplasia primária -->
-  <div class="form-group">
+  <div class="form-group espaco-extra">
     <label for="cancertype">Neoplasia primária:</label>
     <select id="cancertype" required>
       <option value="">Selecione...</option>
@@ -89,19 +90,19 @@
       <option value="092">Leucemia Mielóide (CID 092)</option>
     </select>
   </div>
-</fieldset>
-        <label>
-          Centro participante responsável pela coleta:
-          <select id="center" required>
-            <option value="">Selecione...</option>
-            <option value="001">Instituto Nacional do Câncer - INCA (001)</option>
-            <option value="002">Instituto do Câncer do Estado de São Paulo - ICESP (002)</option>
-            <option value="003">Instituto do Câncer do Ceará - ICC (003)</option>
-          </select>
-        </label>
+
+  <!-- Centro participante -->
+  <div class="form-group espaco-extra">
+    <label for="center">Centro participante responsável pela coleta:</label>
+    <select id="center" required>
+      <option value="">Selecione...</option>
+      <option value="001">Instituto Nacional do Câncer - INCA (001)</option>
+      <option value="002">Instituto do Câncer do Estado de São Paulo - ICESP (002)</option>
+      <option value="003">Instituto do Câncer do Ceará - ICC (003)</option>
+    </select>
+  </div>
 </fieldset>
 
-      <fieldset>
         <legend>🧪 Classificação das Amostras:</legend>
         <label>
           Tipo de amostra:
