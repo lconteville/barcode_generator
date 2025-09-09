@@ -53,40 +53,43 @@
     <form id="form" class="form">
       
       <!-- Projeto -->
-       
-      <fieldset>
-        <legend>📁 Projeto</legend>
-        <label>
-      <div class="form-group">
-        <label for="project">Nome do projeto</label>
-        <select id="project" name="project" required>
-          <option value="">-- Selecione um projeto --</option>
-          <option value="GENOMA">Projeto Genoma Brasil</option>
-          <option value="ATLASTUMORAL">ATP-Br- Atlas tumoral da população Brasileira </option>
-          <option value="EXEMPLO">Outro Projeto</option>
-        </select>
-      </div>
-          Acrônimo do projeto (5 letras):
-          <input type="text" id="inputLetras" maxlength="6" placeholder="Ex: ATPBR" required>
-        </label>
+<!-- Projeto -->
+<fieldset>
+  <legend>📁 Projeto</legend>
+  <!-- Nome do projeto -->
+  <div class="form-group">
+    <label for="project">Nome do projeto</label>
+    <select id="project" name="project" required>
+      <option value="">-- Selecione um projeto --</option>
+      <option value="GENOMA">Projeto Genoma Brasil</option>
+      <option value="ATLASTUMORAL">ATP-Br - Atlas tumoral da população Brasileira</option>
+      <option value="EXEMPLO">Outro Projeto</option>
+    </select>
+  </div>
 
-        <label>
-          Neoplasia primária:
-          <select id="cancertype" required>
-            <option value="">Selecione...</option>
-            <option value="056">Câncer de Ovário (CID 056)</option>
-            <option value="050">Câncer de Mama (CID 050)</option>
-            <option value="053">Câncer de Colo de Útero (CID 053)</option>
-            <option value="541">Câncer de Endométrio (CID 541)</option>
-            <option value="060">Câncer de Pênis (CID 060)</option>
-            <option value="061">Câncer de Próstata (CID 061)</option>            
-            <option value="021">Câncer Anal (CID 021)</option>
-            <option value="091">Leucemia Linfóide (CID 091)</option>
-            <option value="092">Leucemia Mielóide (CID 092)</option>
+  <!-- Acrônimo do projeto -->
+  <div class="form-group espaco-extra">
+    <label for="inputLetras">Acrônimo do projeto (5 letras):</label>
+    <input type="text" id="inputLetras" maxlength="6" placeholder="Ex: ATPBR" required>
+  </div>
 
-          </select>
-        </label>
-
+  <!-- Neoplasia primária -->
+  <div class="form-group">
+    <label for="cancertype">Neoplasia primária:</label>
+    <select id="cancertype" required>
+      <option value="">Selecione...</option>
+      <option value="056">Câncer de Ovário (CID 056)</option>
+      <option value="050">Câncer de Mama (CID 050)</option>
+      <option value="053">Câncer de Colo de Útero (CID 053)</option>
+      <option value="541">Câncer de Endométrio (CID 541)</option>
+      <option value="060">Câncer de Pênis (CID 060)</option>
+      <option value="061">Câncer de Próstata (CID 061)</option>
+      <option value="021">Câncer Anal (CID 021)</option>
+      <option value="091">Leucemia Linfóide (CID 091)</option>
+      <option value="092">Leucemia Mielóide (CID 092)</option>
+    </select>
+  </div>
+</fieldset>
         <label>
           Centro participante responsável pela coleta:
           <select id="center" required>
