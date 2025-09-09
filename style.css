@@ -147,6 +147,11 @@ legend {
   padding: 0 10px;
 }
 
+.textareas-container {
+  display: flex;
+  gap: 20px; /* Espaço entre os dois campos */
+}
+
 /* ====== Botão ====== */
 .btn {
   margin-top: 25px;
