@@ -53,7 +53,11 @@
     <form id="form" class="form">
       
       <!-- Projeto -->
-       <div class="form-group">
+       
+      <fieldset>
+        <legend>📁 Projeto</legend>
+        <label>
+      <div class="form-group">
         <label for="project">Project</label>
         <select id="project" name="project" required>
           <option value="">-- Selecione um projeto --</option>
@@ -62,9 +66,6 @@
           <option value="EXEMPLO">Outro Projeto</option>
         </select>
       </div>
-      <fieldset>
-        <legend>📁 Projeto</legend>
-        <label>
           Acrônimo do projeto (5 letras):
           <input type="text" id="inputLetras" maxlength="6" placeholder="Ex: ATPBR" required>
         </label>
