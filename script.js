@@ -5,7 +5,6 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const project = document.getElementById("project").value; 
-  const sigla = document.getElementById("inputLetras").value.trim().toUpperCase();
   const cancerCID = document.getElementById("cancertype").value;
   const centerID = document.getElementById("center").value;
   const doadores = document.getElementById("doador").value.split("\n").map(v => v.trim()).filter(v => v);
@@ -40,13 +39,13 @@ form.addEventListener("submit", (e) => {
   }
 
   let codigosGerados = [];
-  let linhasCSV = ["Projeto,Sigla,CID,Centro,Participante,Amostra,CodExtra,Barcode"];
+  let linhasCSV = ["Projeto,CID,Centro,Participante,Amostra,CodExtra,Barcode"];
 
   for (let i = 0; i < doadores.length; i++) {
     const doadorID = doadores[i];
     const sampleID = amostras[i];
     const codExtra = `${sampleType}${sampleStatus}${samplePreservation}${analyteType}`;
-    const barcode = `${project}-${sigla}-${cancerCID}-${centerID}-${doadorID}-${sampleID}-${codExtra}`; 
+    const barcode = `${project}-${cancerCID}-${centerID}-${doadorID}-${sampleID}-${codExtra}`; 
     
     codigosGerados.push(barcode);
     linhasCSV.push(`${project},${cancerCID},${centerID},${doadorID},${sampleID},${codExtra},${barcode}`); 
