@@ -62,16 +62,9 @@
     <label for="project">Nome do projeto</label>
     <select id="project" name="project" required>
       <option value="">-- Selecione um projeto --</option>
-      <option value="GENOMA">Projeto Genoma Brasil</option>
-      <option value="ATLASTUMORAL">ATP-Br - Atlas tumoral da população Brasileira</option>
-      <option value="EXEMPLO">Outro Projeto</option>
+      <option value="GENBR">Projeto Genoma Brasil</option>
+      <option value="ATPBR">ATPBR - Atlas tumoral da população Brasileira</option>
     </select>
-  </div>
-
-  <!-- Acrônimo do projeto -->
-  <div class="form-group espaco-extra">
-    <label for="inputLetras">Acrônimo do projeto (5 letras):</label>
-    <input type="text" id="inputLetras" maxlength="6" placeholder="Ex: ATPBR" required>
   </div>
 
   <!-- Neoplasia primária -->
@@ -183,13 +176,12 @@
       <fieldset>
         <legend>👤 Doadores / Pacientes e Amostras</legend>
         <label>
-          Informe os códigos anonimizados dos doadores/pacientes (um por linha, 4 dígitos cada):
+          Informe os códigos anonimizados dos doadores/pacientes e amostras (um por linha, 4 dígitos cada):
+        </label>
+        <div class="textareas-container">
           <textarea id="doador" rows="5" placeholder="Ex: 0001&#10;0002&#10;0003" required></textarea>
-        </label>
-        <label>
-          Informe os códigos anonimizados das amostras (um por linha, 4 dígitos cada):
           <textarea id="amostra" rows="5" placeholder="Ex: 1001&#10;1002&#10;1003" required></textarea>
-        </label>
+        </div> 
       </fieldset>
 
       <button type="submit" class="btn">Criar Barcode</button>
